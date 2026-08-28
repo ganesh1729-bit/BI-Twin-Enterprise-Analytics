@@ -37,16 +37,6 @@ To address the real-world complexities of LLM economics, data privacy, and AI ha
 1. Install [Ollama](https://ollama.com/) and pull the local model:
    ```bash
    ollama run llama3
-
-Install Python dependencies:
-
    pip install streamlit pandas ollama
-
-Generate the synthetic multi-source enterprise dataset:
-
    python generate_enterprise_data.py
-
-Launch the BI Twin workspace:
-
-  python -m streamlit run app.py
-
+   python -m streamlit run app.py
