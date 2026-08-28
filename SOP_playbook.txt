@@ -1,0 +1,33 @@
+================================================================================
+ENTERPRISE STANDARD OPERATING PROCEDURES (SOP) PLAYBOOK
+================================================================================
+
+1. MARKETING BUDGET & AD SPEND DEVIATION
+- Condition: Sudden volume drop correlated with marketing budget cut or ad pause.
+- Root Cause: Paid acquisition channel deprioritization or campaign throttling.
+- Action: Immediately notify Growth Marketing team to unpause regional campaigns and restore target CPM/CPC ad spend baselines within 2 hours.
+- Owner: Head of Digital Marketing
+
+2. PRICING DRIFT / UNAUTHORIZED DISCOUNTING
+- Condition: Negative price effect resulting in revenue loss exceeding target margin.
+- Root Cause: Regional price cut, expired promotional code override, or competitor matching.
+- Action: Flag pricing mismatch in ERP, freeze manual discount overrides, and trigger automated margin compliance review.
+- Owner: Commercial Strategy & Pricing Ops
+
+3. PAYMENT GATEWAY TIMEOUT / 502 API FAILURE
+- Condition: Sharp transaction volume drop with normal web traffic.
+- Root Cause: Primary payment gateway connection drop or API timeout.
+- Action: Rollback checkout module to previous stable version and route regional traffic to secondary backup processor.
+- Owner: IT Engineering / Site Reliability
+
+4. COLD START / LAUNCH PRODUCT VOLATILITY
+- Condition: Sparse history KPI (<14 days) showing >10% variance against category baseline.
+- Root Cause: Early launch elasticity, onboarding funnel friction, or initial stock stocking delays.
+- Action: Deploy launch monitoring protocol; request 48-hour manual analytics tracking before modifying standard price/volume targets.
+- Owner: Product Operations
+
+5. UNEXPLAINED OPERATIONAL ANOMALY
+- Condition: Metric crash with zero matching infrastructure or marketing error telemetry.
+- Root Cause: Unknown external/system factor.
+- Action: Programmatic abstention required. Do not execute automated remediation. Escalate incident ticket to Tier-3 Data Analyst.
+- Owner: BI Incident Response Team

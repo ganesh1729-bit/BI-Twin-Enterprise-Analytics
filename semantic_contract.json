@@ -1,0 +1,22 @@
+{
+  "kpis": {
+    "revenue": {
+      "source": "enterprise_data.db",
+      "grain": "daily",
+      "calculation": "price * volume",
+      "mature_threshold_sigma": 2.0,
+      "sparse_threshold_percent": 0.10,
+      "sparse_definition_days": 14
+    }
+  },
+  "rbac": {
+    "Regional Manager": {
+      "allowed_views": ["executive_summary", "sop_action"],
+      "block_raw_data": true
+    },
+    "Data Analyst": {
+      "allowed_views": ["executive_summary", "sop_action", "pvm_decomposition", "raw_sql", "confidence_score"],
+      "block_raw_data": false
+    }
+  }
+}
