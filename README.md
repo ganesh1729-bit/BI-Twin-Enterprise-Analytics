@@ -38,5 +38,5 @@ To address the real-world complexities of LLM economics, data privacy, and AI ha
    ```bash
    ollama run llama3
    pip install streamlit pandas ollama
-   python generate_enterprise_data.py
-   python -m streamlit run app.py
+   py generate_enterprise_data.py
+   py -m streamlit run app.py
